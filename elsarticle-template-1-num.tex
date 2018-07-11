@@ -18,7 +18,7 @@
 %% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
 %% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
 %%
-\documentclass[preprint,12pt]{elsarticle}
+\documentclass[final,12pt,twocolumn]{elsarticle}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
@@ -42,7 +42,7 @@
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
 %% for the whole article with \linenumbers after \end{frontmatter}.
-\usepackage{lineno}
+%\usepackage{lineno}
 
 %% natbib.sty is loaded by default. However, natbib options can be
 %% provided with \biboptions{...} command. Following options are
@@ -73,7 +73,7 @@
 
 %% Title, authors and addresses
 
-\title{A Scalable SDN-Based Network Virtualization  Architecture Using Switch Virtualization}
+\title{A Scalable Network Virtualization Architecture in Software Defined Network Using Virtual Switch}
 
 %% use the tnoteref command within \title for footnotes;
 %% use the tnotetext command for the associated footnote;
@@ -100,9 +100,12 @@
 %% \address[label1]{<address>}
 %% \address[label2]{<address>}
 
-\author{John Smith}
+\author[inst1]{Fernando N. N. Farias}
+\ead{fernnf@ufpa.br}
+\author[inst1]{Ant\^{o}nio J. G. Abel\'{e}m}
+\ead{abelem@ufpa.br}
 
-\address{California, United States}
+\address[inst1]{The Computer Science Post-Graduate Program\\ Federal University of Par\'{a} -- UFPA }
 
 \begin{abstract}
 %% Text of abstract
@@ -110,7 +113,7 @@ Suspendisse potenti. Suspendisse quis sem elit, et mattis nisl. Phasellus conseq
 \end{abstract}
 
 \begin{keyword}
-Science \sep Publication \sep Complicated
+Network Virtualization \sep Software-Defined Network \sep Switch Virtualization \sep Slice 
 %% keywords here, in the form: keyword \sep keyword
 
 %% MSC codes here, in the form: \MSC code \sep code
@@ -123,11 +126,13 @@ Science \sep Publication \sep Complicated
 %%
 %% Start line numbering here if you want
 %%
-\linenumbers
+%\linenumbers
 
 %% main text
-\section{The First Section}
-\label{S:1}
+\section{Introduction}
+\label{Intro:1}
+
+Network virtualization (NV) have attracted a lot of highlights as an essential solution for network computing. The NV has been a main keyword among networking researchers and manufacturer for describing virtualization solutions based on virtual private networks, overlay networks, and programmable networks.
 
 Maecenas \cite{Smith:2012qr} fermentum \cite{Smith:2013jd} urna ac sapien tincidunt lobortis. Nunc feugiat faucibus varius. Ut sed purus nunc. Ut eget eros quis lectus mollis pharetra ut in tellus. Pellentesque ultricies velit sed orci pharetra et fermentum lacus imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse commodo ultrices mauris, condimentum hendrerit lorem condimentum et. Pellentesque urna augue, semper et rutrum ac, consequat id quam. Proin lacinia aliquet justo, ut suscipit massa commodo sit amet. Proin vehicula nibh nec mauris tempor interdum. Donec orci ante, tempor a viverra vel, volutpat sed orci.
 
@@ -147,7 +152,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 Quisque elit ipsum, porttitor et imperdiet in, facilisis ac diam. Nunc facilisis interdum felis eget tincidunt. In condimentum fermentum leo, non consequat leo imperdiet pharetra. Fusce ac massa ipsum, vel convallis diam. Quisque eget turpis felis. Curabitur posuere, risus eu placerat porttitor, magna metus mollis ipsum, eu volutpat nisl erat ac justo. Nullam semper, mi at iaculis viverra, nunc velit iaculis nunc, eu tempor ligula eros in nulla. Aenean dapibus eleifend convallis. Cras ut libero tellus. Integer mollis eros eget risus malesuada fringilla mattis leo facilisis. Etiam interdum turpis eget odio ultricies sed convallis magna accumsan. Morbi in leo a mauris sollicitudin molestie at non nisl.
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \begin{tabular}{l l l}
 \hline
@@ -180,7 +185,7 @@ e = mc^2
 \section{The Second Section}
 \label{S:2}
 
-Reference to Section \ref{S:1}. Etiam congue sollicitudin diam non porttitor. Etiam turpis nulla, auctor a pretium non, luctus quis ipsum. Fusce pretium gravida libero non accumsan. Donec eget augue ut nulla placerat hendrerit ac ut mi. Phasellus euismod ornare mollis. Proin tempus fringilla ultricies. Donec pretium feugiat libero quis convallis. Nam interdum ante sed magna congue eu semper tellus sagittis. Curabitur eu augue elit.
+Reference to Section. Etiam congue sollicitudin diam non porttitor. Etiam turpis nulla, auctor a pretium non, luctus quis ipsum. Fusce pretium gravida libero non accumsan. Donec eget augue ut nulla placerat hendrerit ac ut mi. Phasellus euismod ornare mollis. Proin tempus fringilla ultricies. Donec pretium feugiat libero quis convallis. Nam interdum ante sed magna congue eu semper tellus sagittis. Curabitur eu augue elit.
 
 Aenean eleifend purus et massa consequat facilisis. Etiam volutpat placerat dignissim. Ut nec nibh nulla. Aliquam erat volutpat. Nam at massa velit, eu malesuada augue. Maecenas sit amet nunc mauris. Maecenas eu ligula quis turpis molestie elementum nec at est. Sed adipiscing neque ac sapien viverra sit amet vestibulum arcu rhoncus.
 
